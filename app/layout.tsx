@@ -1,8 +1,13 @@
 import type { Metadata } from "next";
-import { Montserrat } from "next/font/google";
+import { Rubik, Bebas_Neue } from "next/font/google";
 import "./globals.css";
 
-const montserrat = Montserrat({ subsets: ["latin"] });
+import { config } from "@fortawesome/fontawesome-svg-core";
+import "@fortawesome/fontawesome-svg-core/styles.css";
+config.autoAddCss = false;
+
+const rubik = Rubik({ subsets: ["latin"] });
+export const bebas_neue = Bebas_Neue({ subsets: ["latin"], weight: "400" });
 
 export const metadata: Metadata = {
   title: "Matthew Frieri",
@@ -16,7 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${montserrat.className} antialiased`}>{children}</body>
+      <body className={`${rubik.className} antialiased`}>{children}</body>
     </html>
   );
 }
