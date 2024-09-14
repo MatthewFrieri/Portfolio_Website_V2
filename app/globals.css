@@ -6,7 +6,8 @@
   --bkg: #232323;
   --dark: #0f0f0f;
   --content: #ffffff;
-  --primary: #de4646;
+  --primary: #dc4040;
+  /* --primary: #de4646; */
   --primary-dark: #490000;
   --secondary: #E0B151;
 }
@@ -21,4 +22,20 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+@keyframes rotateTitle {
+  0% {
+    transform: rotateX(90deg); 
+    opacity: 0;
+  }
+  100% {
+    transform: rotateX(0deg);
+    opacity: 1;
+  
+  }
+}
+
+.animate-title {
+  animation: rotateTitle 1.2s ease forwards; /* Runs for 1 second */
 }

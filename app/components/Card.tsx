@@ -1,12 +1,38 @@
-export default function Card() {
+import Link from "next/link";
+import { bebas_neue } from "../layout";
+
+type CardProps = {
+  name: string;
+  href: string;
+  tools: string[];
+  children: React.ReactNode;
+};
+
+export default function Card({ name, href, tools, children }: CardProps) {
   return (
-    <div className=" [perspective:500px]">
-      <div
-        id="card"
-        className="w-[40rem] h-[30rem] bg-primary flex items-center outline-t-2 outline-green-500"
-      >
-        <div className="w-full h-2 bg-blue-500" />
-      </div>
+    <div className="[perspective:750px] flex justify-center w-full">
+      <Link href={href} target="_blank">
+        <div id="card" className="relative w-[80rem] h-[50rem]">
+          <div className="bg-primary shadow-dark shadow-xl rounded-md w-full h-[44.5rem]">
+            {children}
+          </div>
+          <h1
+            className={`absolute bottom-0 left-10 text-9xl ${bebas_neue.className}`}
+          >
+            {name}
+          </h1>
+          <ul className="-right-28 bottom-[6.5rem] absolute">
+            {tools.toReversed().map((tool, index) => (
+              <li
+                key={index}
+                className="flex justify-center items-center border-2 bg-secondary mt-3 border-bkg rounded w-36 h-10 font-medium text-bkg"
+              >
+                {tool}
+              </li>
+            ))}
+          </ul>
+        </div>
+      </Link>
     </div>
   );
 }
