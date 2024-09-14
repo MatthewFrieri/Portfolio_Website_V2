@@ -10,6 +10,7 @@ const config: Config = {
     extend: {
       colors: {
         bkg: "var(--bkg)",
+        "bkg-dark": "var(--bkg-dark)",
         dark: "var(--dark)",
         content: "var(--content)",
         primary: "var(--primary)",

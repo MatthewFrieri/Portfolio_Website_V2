@@ -3,7 +3,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope, faNewspaper } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
-import Header from "./components/Header";
 import { bebas_neue } from "./layout";
 import { PythonLogo } from "./components/logos/PythonLogo";
 import { NextjsLogo } from "./components/logos/NextjsLogo";
@@ -15,10 +14,6 @@ import Card from "./components/Card";
 
 export default function Home() {
   const [titleClass, setTitleClass] = useState(""); // Manage class for title
-
-  useEffect(() => {
-    setTitleClass("animate-title");
-  }, []);
 
   const handleScroll = () => {
     const title = document.getElementById("projects-title");
@@ -65,6 +60,7 @@ export default function Home() {
   };
 
   useEffect(() => {
+    setTitleClass("animate-title");
     handleScroll();
     window.addEventListener("scroll", handleScroll);
     return () => {
@@ -74,12 +70,11 @@ export default function Home() {
 
   return (
     <>
-      {/* <Header /> */}
-      <p className="p-4 h-16 font-medium text-3xl text-center">
-        Matthew Frieri
-      </p>
+      <section className="bg-gradient-to-b from-70% from-bkg to-bkg-dark px-20 pb-40">
+        <p className="mb-32 p-4 h-16 font-medium text-3xl text-center">
+          Matthew Frieri
+        </p>
 
-      <section className="px-20 pt-32">
         <div className="flex justify-center gap-20">
           <img
             src="profile.png"
@@ -108,14 +103,14 @@ export default function Home() {
               <Link
                 href={"https://github.com/MatthewFrieri"}
                 target="_blank"
-                className="hover:text-secondary transition-all hover:-translate-y-1"
+                className="hover:text-secondary transition-all hover:scale-110"
               >
                 <FontAwesomeIcon icon={faGithub} />
               </Link>
               <Link
                 href={"https://www.linkedin.com/in/matthew-frieri"}
                 target="_blank"
-                className="hover:text-secondary transition-all hover:-translate-y-1"
+                className="hover:text-secondary transition-all hover:scale-110"
               >
                 <FontAwesomeIcon icon={faLinkedin} />
               </Link>
@@ -124,7 +119,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="gap-x-16 grid grid-cols-[2fr,1fr] grid-rows-[5rem,1fr] bg-dark mt-40 px-80 py-24">
+      <section className="gap-x-16 grid grid-cols-[2fr,1fr] grid-rows-[5rem,1fr] bg-dark px-80 py-24">
         <p className={`${bebas_neue.className} text-5xl text-secondary`}>
           About Me
         </p>
@@ -155,7 +150,7 @@ export default function Home() {
 
       <section
         id="projects-section"
-        className="flex flex-col gap-[10rem] pb-60 min-h-[52rem] overflow-hidden"
+        className="flex flex-col gap-[10rem] bg-gradient-to-b from-70% from-bkg to-bkg-dark pb-60 min-h-[52rem] overflow-hidden"
       >
         <Card
           name="Resume Roast"
@@ -254,28 +249,28 @@ export default function Home() {
         <Link
           href={"mailto: mat.frieri@gmail.com"}
           target="_blank"
-          className="hover:text-secondary transition-all hover:-translate-y-1"
+          className="hover:text-secondary transition-all hover:scale-110"
         >
           <FontAwesomeIcon icon={faEnvelope} />
         </Link>
         <Link
           href={"https://github.com/MatthewFrieri"}
           target="_blank"
-          className="hover:text-secondary transition-all hover:-translate-y-1"
+          className="hover:text-secondary transition-all hover:scale-110"
         >
           <FontAwesomeIcon icon={faGithub} />
         </Link>
         <Link
           href={"https://www.linkedin.com/in/matthew-frieri"}
           target="_blank"
-          className="hover:text-secondary transition-all hover:-translate-y-1"
+          className="hover:text-secondary transition-all hover:scale-110"
         >
           <FontAwesomeIcon icon={faLinkedin} />
         </Link>
         <Link
           href={"Resume.pdf"}
           target="_blank"
-          className="hover:text-secondary transition-all hover:-translate-y-1"
+          className="hover:text-secondary transition-all hover:scale-110"
         >
           <FontAwesomeIcon icon={faNewspaper} />
         </Link>
