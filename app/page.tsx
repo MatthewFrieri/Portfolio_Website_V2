@@ -13,7 +13,7 @@ import { useEffect, useState } from "react";
 import Card from "./components/Card";
 
 export default function Home() {
-  const [titleClass, setTitleClass] = useState(""); // Manage class for title
+  const [titleClass, setTitleClass] = useState("");
 
   const handleScroll = () => {
     const title = document.getElementById("projects-title");
