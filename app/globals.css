@@ -30,10 +30,12 @@ body {
     transform: rotateX(90deg); 
     opacity: 0;
   }
+  50% { 
+    opacity: 1;
+  }
   100% {
     transform: rotateX(0deg);
     opacity: 1;
-  
   }
 }
 
