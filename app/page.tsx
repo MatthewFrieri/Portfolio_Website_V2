@@ -3,7 +3,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope, faNewspaper } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
-import { bebas_neue } from "./layout";
 import { PythonLogo } from "./components/logos/PythonLogo";
 import { NextjsLogo } from "./components/logos/NextjsLogo";
 import { TailwindLogo } from "./components/logos/TailwindLogo";
@@ -11,6 +10,9 @@ import { TypescriptLogo } from "./components/logos/TypescriptLogo";
 import { GitLogo } from "./components/logos/GitLogo";
 import { useEffect, useState } from "react";
 import Card from "./components/Card";
+import { Bebas_Neue } from "next/font/google";
+
+const bebas_neue = Bebas_Neue({ subsets: ["latin"], weight: "400" });
 
 export default function Home() {
   const [titleClass, setTitleClass] = useState("");

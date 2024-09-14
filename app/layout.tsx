@@ -11,7 +11,7 @@ const metadata = {
 };
 
 const rubik = Rubik({ subsets: ["latin"] });
-export const bebas_neue = Bebas_Neue({ subsets: ["latin"], weight: "400" });
+const bebas_neue = Bebas_Neue({ subsets: ["latin"], weight: "400" });
 
 export default function RootLayout({
   children,

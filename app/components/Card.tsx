@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { bebas_neue } from "../layout";
+import { Bebas_Neue } from "next/font/google";
+const bebas_neue = Bebas_Neue({ subsets: ["latin"], weight: "400" });
 
 type CardProps = {
   name: string;
