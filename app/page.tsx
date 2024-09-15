@@ -72,50 +72,51 @@ export default function Home() {
 
   return (
     <>
-      <section className="bg-gradient-to-b from-70% from-bkg to-bkg-dark px-20 pb-40">
-        <p className="mb-32 p-4 h-16 font-medium text-3xl text-center">
-          Matthew Frieri
-        </p>
-
-        <div className="flex justify-between px-10">
-          <img
-            src="profile.png"
-            alt="Matthew Frieri"
-            className="bg-gradient-to-b from-20% from-primary to-primary-dark shadow-dark shadow-xl rounded-full max-h-[38rem]"
-          />
-          <div
-            className={`flex flex-col [perspective:750px] text-right text-[9.5rem] leading-[1.1] ml-auto ${bebas_neue.className}`}
-          >
-            <h1
-              className={`origin-bottom opacity-0 [transform:rotateX(90deg)] ${titleClass}`}
+      <section className="bg-gradient-to-b from-70% from-bkg to-bkg-dark pb-40">
+        <div className="mx-auto px-20 w-[115rem]">
+          <p className="mb-32 p-4 h-16 font-medium text-3xl text-center">
+            Matthew Frieri
+          </p>
+          <div className="flex justify-between">
+            <img
+              src="profile.png"
+              alt="Matthew Frieri"
+              className="bg-gradient-to-b from-20% from-primary to-primary-dark shadow-dark shadow-xl rounded-full max-h-[38rem]"
+            />
+            <div
+              className={`flex flex-col [perspective:750px] text-right text-[9.5rem] leading-[1.1] ml-auto ${bebas_neue.className}`}
             >
-              Software Engineer<span className="text-primary">.</span> <br />
-            </h1>
-            <h1
-              className={`origin-bottom opacity-0 [transform:rotateX(90deg)] ${titleClass}`}
-            >
-              Web Developer<span className="text-primary">.</span> <br />
-            </h1>
-            <h1
-              className={`origin-bottom opacity-0 [transform:rotateX(90deg)] ${titleClass}`}
-            >
-              Problem Solver<span className="text-primary">.</span>
-            </h1>
-            <div className="flex justify-center gap-8 mt-10 text-5xl">
-              <Link
-                href={"https://github.com/MatthewFrieri"}
-                target="_blank"
-                className="hover:text-secondary transition-all hover:scale-110"
+              <h1
+                className={`origin-bottom opacity-0 [transform:rotateX(90deg)] ${titleClass}`}
               >
-                <FontAwesomeIcon icon={faGithub} />
-              </Link>
-              <Link
-                href={"https://www.linkedin.com/in/matthew-frieri"}
-                target="_blank"
-                className="hover:text-secondary transition-all hover:scale-110"
+                Software Engineer<span className="text-primary">.</span> <br />
+              </h1>
+              <h1
+                className={`origin-bottom opacity-0 [transform:rotateX(90deg)] ${titleClass}`}
               >
-                <FontAwesomeIcon icon={faLinkedin} />
-              </Link>
+                Web Developer<span className="text-primary">.</span> <br />
+              </h1>
+              <h1
+                className={`origin-bottom opacity-0 [transform:rotateX(90deg)] ${titleClass}`}
+              >
+                Problem Solver<span className="text-primary">.</span>
+              </h1>
+              <div className="flex justify-center gap-8 mt-10 text-5xl">
+                <Link
+                  href={"https://github.com/MatthewFrieri"}
+                  target="_blank"
+                  className="hover:text-secondary transition-all hover:scale-110"
+                >
+                  <FontAwesomeIcon icon={faGithub} />
+                </Link>
+                <Link
+                  href={"https://www.linkedin.com/in/matthew-frieri"}
+                  target="_blank"
+                  className="hover:text-secondary transition-all hover:scale-110"
+                >
+                  <FontAwesomeIcon icon={faLinkedin} />
+                </Link>
+              </div>
             </div>
           </div>
         </div>
@@ -130,8 +131,8 @@ export default function Home() {
         </p>
         <p className="text-2xl">
           Hello! I'm Matthew Frieri, a second-year student in Computer and Data
-          Science at the University of Toronto. I'm passionate about discovering
-          how technology can solve real-world problems and positively impact
+          Science at the University of Toronto. I'm passionate about using
+          technology to solve real-world problems and positively impact
           different industries and communities.
         </p>
         <div className="flex gap-8">
@@ -145,7 +146,7 @@ export default function Home() {
 
       <h1
         id="projects-title"
-        className={`${bebas_neue.className} text-[12rem] text-center sticky top-[24rem] mt-32 mb-32`}
+        className={`${bebas_neue.className} text-[12rem] text-center sticky top-[18rem] mt-32 mb-32`}
       >
         Projects
       </h1>
