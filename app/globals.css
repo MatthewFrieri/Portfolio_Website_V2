@@ -42,3 +42,202 @@ body {
 .animate-title {
   animation: rotateTitle 1.2s ease forwards; /* Runs for 1 second */
 }
+
+
+.container {
+  max-width: 1700px;
+  margin-left: auto;
+  margin-right: auto;
+  /* padding-left: 0.5rem;
+  padding-right: 0.5rem; */
+  outline: 1px solid rgb(109, 245, 109);
+}
+
+/* 3xl */
+@media (max-width: 1700px) {
+  .container {
+    max-width: 1536px;
+  }
+
+  h1 {
+    font-size: 8.75rem;
+  }
+  #profile { 
+    height: 36rem;
+  }
+  #top-links {
+    font-size: 2.75rem;
+  }
+  li {
+    font-size: 1rem;
+  }
+}
+
+/* 2xl */
+@media (max-width: 1536px) {
+  .container {
+    max-width: 1280px;
+  }
+
+  h1 {
+    font-size: 7rem;
+  }
+  #profile { 
+    height: 30rem;
+  }
+  #top-links {
+    font-size: 2.5rem;
+  }
+  #card-text {
+    font-size: 1.5rem;
+  }
+  #card {
+    height: 46rem;
+  }
+  li {
+    font-size: 0.9rem;
+  }
+  #project-name {
+    font-size: 8rem;
+  }
+}
+
+/* xl */
+@media (max-width: 1280px) {
+  .container {
+    max-width: 1024px;
+  }
+
+  h1 {
+    font-size: 5.75rem;
+  }
+  #profile { 
+    height: 24rem;
+  }
+  #top-links {
+    font-size: 2.25rem;
+  }
+  #card-text {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+  }
+  #card {
+    height: 40rem;
+  }
+  li {
+    font-size: 0.7rem;
+  }
+  #project-name {
+    font-size: 6.8rem;
+  }
+}
+
+/* lg */
+@media (max-width: 1024px) {
+  .container {
+    max-width: 768px;
+  }
+
+  h1 {
+    font-size: 4.25rem;
+  }
+  #profile { 
+    height: 18rem;
+  }
+  #top-links {
+    font-size: 2rem;
+  }
+  #tools {
+    margin-top: 40px;
+  }
+  #card-text {
+    font-size: 1.1rem;
+    line-height: 1.3rem;
+  }
+  #card {
+    height: 32rem;
+  }
+  li {
+    font-size: 0.55rem;
+  }
+  #project-name {
+    font-size: 5.3rem;
+  }
+}
+
+/* md */
+@media (max-width: 768px) {
+  .container {
+    max-width: 640px;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+  }
+  #profile { 
+    height: 15rem;
+  }
+  #top-links {
+    font-size: 2rem;
+  }
+  #title-container {
+    padding-bottom: 5rem;
+  }
+  #name {
+    margin-bottom: 40px;
+  }
+  #card-text {
+    font-size: 0.9rem;
+    line-height: 1.1rem;
+  }
+  #card {
+    height: 26rem;
+  }
+  li {
+    font-size: 0.45rem;
+  }
+  #project-name {
+    font-size: 4.5rem;
+  }
+}
+
+/* sm */
+@media (max-width: 640px) {
+  .container {
+    max-width: 475px;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+  }
+  #profile { 
+    height: 11rem;
+  }
+  #top-links {
+    font-size: 2rem;
+  }
+  #tools {
+    margin-top: 80px;
+  }
+  #card-text {
+    font-size: 0.65rem;
+    line-height: 0.85rem;
+  }
+  #card {
+    height: 20rem;
+  }
+  li {
+    font-size: 0.32rem;
+  }
+  #project-name {
+    font-size: 3.5rem;
+  }
+
+}
+
+/* xs */
+@media (max-width: 475px) {
+  .container {
+    width: 100%;
+  }
+}
