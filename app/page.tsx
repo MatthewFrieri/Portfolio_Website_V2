@@ -20,7 +20,13 @@ export default function Home() {
   const handleScroll = () => {
     const title = document.getElementById("projects-title");
 
-    if (window.scrollY > 1700) {
+    // const dissapearLimit = window.innerWidth > 768 ? 1600 : 1300;
+    let dissapearLimit;
+    if (window.innerWidth > 768) dissapearLimit = 1600;
+    else if (window.innerWidth > 475) dissapearLimit = 1300;
+    else dissapearLimit = 1550;
+
+    if (window.scrollY > dissapearLimit) {
       title!.style.visibility = "hidden";
     } else {
       title!.style.visibility = "visible";
@@ -153,10 +159,10 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="container">
+      <section className="top-[18rem] sticky container">
         <h1
           id="projects-title"
-          className={`${bebas_neue.className} text-[12rem] text-center sticky top-[18rem] mt-32 mb-32`}
+          className={`${bebas_neue.className} text-[12rem] text-center  mt-32 mb-32`}
         >
           Projects
         </h1>
@@ -165,7 +171,7 @@ export default function Home() {
       <section className="bg-gradient-to-b from-70% from-bkg to-bkg-dark">
         <div
           id="projects-container"
-          className="flex flex-col gap-[10rem] px-[2%] pb-60 max-w-none overflow-hidden container"
+          className="flex flex-col gap-[10rem] px-[2%] pb-60 overflow-hidden container"
         >
           <Card
             name="Resume Roast"
@@ -209,7 +215,7 @@ export default function Home() {
             href="https://github.com/MatthewFrieri/HackThe6ix-CodeGenius"
             tools={[
               "NextJS",
-              " TypeScript ",
+              "  TypeScript  ",
               "Tailwind",
               "Flask",
               "Meta Llama",
@@ -274,7 +280,7 @@ export default function Home() {
 
       <section className="bg-dark">
         <div className="flex justify-center items-center gap-8 h-60 text-4xl container">
-          <div className="border-secondary mr-10 border w-80" />
+          <div className="border-secondary mr-10 border w-80 footer-lines" />
           <Link
             href={"mailto: mat.frieri@gmail.com"}
             target="_blank"
@@ -303,7 +309,7 @@ export default function Home() {
           >
             <FontAwesomeIcon icon={faNewspaper} />
           </Link>
-          <div className="border-secondary ml-10 border w-80" />
+          <div className="border-secondary ml-10 border w-80 footer-lines" />
         </div>
       </section>
     </>

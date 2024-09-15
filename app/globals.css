@@ -48,9 +48,7 @@ body {
   max-width: 1700px;
   margin-left: auto;
   margin-right: auto;
-  /* padding-left: 0.5rem;
-  padding-right: 0.5rem; */
-  outline: 1px solid rgb(109, 245, 109);
+  /* outline: 1px solid rgb(109, 245, 109); */
 }
 
 /* 3xl */
@@ -130,6 +128,9 @@ body {
   #project-name {
     font-size: 6.8rem;
   }
+  #projects-title  {
+    font-size: 10rem;
+  }
 }
 
 /* lg */
@@ -162,6 +163,9 @@ body {
   }
   #project-name {
     font-size: 5.3rem;
+  }
+  #projects-title  {
+    font-size: 8rem;
   }
 }
 
@@ -199,6 +203,9 @@ body {
   #project-name {
     font-size: 4.5rem;
   }
+  #projects-title  {
+    font-size: 7rem;
+  }
 }
 
 /* sm */
@@ -232,12 +239,93 @@ body {
   #project-name {
     font-size: 3.5rem;
   }
-
+  #projects-title  {
+    font-size: 6rem;
+  }
 }
 
 /* xs */
 @media (max-width: 475px) {
   .container {
-    width: 100%;
+    max-width: 400px;
+  }
+  
+  h1 {
+    font-size: 2rem;
+  }
+  #profile { 
+    height: 10rem;
+  }
+  #top-links {
+    font-size: 1.75rem;
+  }
+  #tools {
+    margin-top: 80px;
+  }
+  #card-text {
+    font-size: 0.55rem;
+    line-height: 0.8rem;
+  }
+  #card {
+    height: 20rem;
+  }
+  li {
+    font-size: 0.32rem;
+  }
+  #project-name {
+    font-size: 3rem;
+  }
+  #projects-title  {
+    font-size: 5rem;
+  }
+  .footer-lines {
+    visibility: hidden;
+  }
+}
+
+/* 2xs */
+@media (max-width: 400px) {
+  .container {
+    /* max-width: 370px; */
+    width: 95%;
+  }
+  
+  h1 {
+    font-size: 1.8rem;
+  }
+  #profile { 
+    height: 9rem;
+  }
+  #top-links {
+    font-size: 1.75rem;
+  }
+  #tools {
+    margin-top: 80px;
+  }
+  #card-text {
+    font-size: 0.55rem;
+    line-height: 0.8rem;
+  }
+  #card {
+    height: 20rem;
+  }
+  li {
+    font-size: 0.32rem;
+  }
+  #project-name {
+    font-size: 3rem;
+  }
+  #projects-title  {
+    font-size: 5rem;
+  }
+  .footer-lines {
+    visibility: hidden;
+  }
+}
+
+/* 3xs */
+@media (max-width: 370px) {
+  .container {
+    width: 95%;
   }
 }
