@@ -227,8 +227,9 @@ body {
     margin-top: 80px;
   }
   #card-text {
-    font-size: 0.65rem;
+    font-size: 0.60rem;
     line-height: 0.85rem;
+    padding-right: 5px;
   }
   #card {
     height: 20rem;
@@ -264,7 +265,9 @@ body {
   }
   #card-text {
     font-size: 0.55rem;
-    line-height: 0.8rem;
+    line-height: 0.75rem;
+    padding-right: 8px;
+
   }
   #card {
     height: 20rem;
@@ -303,8 +306,10 @@ body {
     margin-top: 80px;
   }
   #card-text {
-    font-size: 0.55rem;
-    line-height: 0.8rem;
+    font-size: 0.5rem;
+    line-height: 0.6rem;
+    padding-right: 15px;
+
   }
   #card {
     height: 20rem;
@@ -320,6 +325,9 @@ body {
   }
   .footer-lines {
     visibility: hidden;
+  }
+  #bio {
+    margin-top: 40px;
   }
 }
 

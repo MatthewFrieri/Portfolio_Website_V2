@@ -143,11 +143,11 @@ export default function Home() {
           <p className={`${bebas_neue.className} text-5xl text-secondary`}>
             My Go-To Tools
           </p>
-          <p className="text-2xl">
+          <p id="bio" className="text-2xl">
             Hello! I'm Matthew Frieri, a second-year student in Computer and
             Data Science at the University of Toronto. I'm passionate about
-            using technology to solve real-world problems and positively impact
-            different industries and communities.
+            continuous learning and using technology to tackle real-world
+            problems, always striving to make a positive impact.
           </p>
           <div id="tools" className="flex flex-wrap gap-8">
             <TypescriptLogo width={60} />
@@ -199,14 +199,16 @@ export default function Home() {
                 id="card-text"
                 className="col-start-2 row-span-2 row-start-1 my-auto text-3xl"
               >
-                Resume Roast takes the user's resume, and uses AI to generate a
-                track by Drake, which disses the user's resume in a personalized
-                and playful manner. Drake will lay down some smooth bars and
-                sharp lyrics highlighting the weaknesses in your resume. After
-                listening to the exceptional track by Toronto's very own, the
-                user is then prompted to "fix their resume." They are then
-                treated to yet another musical masterpiece by Drake's biggest
-                rival, Kendrick Lamar.
+                Resume Roast takes the user's resume, and uses AI and voice
+                replication systems to generate a track by Drake, dissing the
+                resume in a personalized and playful manner. Drake will lay down
+                some smooth bars and sharp lyrics highlighting the weaknesses in
+                your resume. After listening to the exceptional track by
+                Toronto's very own, the user is then prompted to "fix their
+                resume." They are then treated to yet another musical
+                masterpiece by Drake's biggest rival, Kendrick Lamar. This is
+                where the user gains key insights on specific ways to improve
+                their resume.
               </p>
             </div>
           </Card>
@@ -236,15 +238,13 @@ export default function Home() {
                 id="card-text"
                 className="col-start-2 row-span-2 row-start-1 my-auto text-3xl"
               >
-                CodeGenius starts with the user input. Users can drag-and-drop
-                either a singular code file or a larger .zip file with many
-                different code files in it. It can parse most modern programming
-                languages, but our models have been tested and prompted with
-                mostly Python3 code. Then, in seconds all files provided by the
-                user are annotated! Certain sections of the program are
-                highlighted as areas of potential confusion for someone else
-                reading it. Then, upon either hovering over (or clicking on) the
-                section of code, a more detailed annotation is provided.
+                CodeGenius is a tool to help annotate and break down code.
+                Simply upload a file (or zip file) and in seconds everythin is
+                annotated are annotated! Certain sections of code will be
+                highlighted as areas of potential confusion where some
+                refactoring could improve the codebase. More detailed notes
+                along with a rating and justification for the readablitiy of the
+                code can also be found by through some intuative navigation.
               </p>
             </div>
           </Card>
@@ -266,12 +266,13 @@ export default function Home() {
               />
               <p id="card-text" className="my-auto text-3xl">
                 CookClever is an innovative web app designed to help people
-                learn how to cook. It offers a wide range of recipes with
-                detailed, step-by-step instructions to guide users through the
-                cooking process. At each step, users are prompted to take a
-                picture of their progress. Using AI, CookClever analyzes these
-                images and provides tailored feedback to help users improve
-                their cooking skills.
+                learn how to cook. It offers recipes and step-by-step
+                instructions to guide users through the cooking process. At each
+                step, users are prompted to take a picture of their progress.
+                Using AI, CookClever analyzes these images and provides tailored
+                feedback to help users improve their cooking skills. This
+                experience is also gamified by giving the user an overall score
+                for how well the step was followed.
               </p>
             </div>
           </Card>
