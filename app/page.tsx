@@ -77,14 +77,14 @@ export default function Home() {
           Matthew Frieri
         </p>
 
-        <div className="flex justify-center gap-20">
+        <div className="flex justify-between px-10">
           <img
             src="profile.png"
             alt="Matthew Frieri"
             className="bg-gradient-to-b from-20% from-primary to-primary-dark shadow-dark shadow-xl rounded-full max-h-[38rem]"
           />
           <div
-            className={`flex flex-col [perspective:750px] text-right text-[9.5rem] leading-[1.1] ${bebas_neue.className}`}
+            className={`flex flex-col [perspective:750px] text-right text-[9.5rem] leading-[1.1] ml-auto ${bebas_neue.className}`}
           >
             <h1
               className={`origin-bottom opacity-0 [transform:rotateX(90deg)] ${titleClass}`}
