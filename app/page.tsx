@@ -304,7 +304,7 @@ export default function Home() {
             <FontAwesomeIcon icon={faLinkedin} />
           </Link>
           <Link
-            href={"Resume.pdf"}
+            href={"/Resume.pdf"}
             target="_blank"
             className="hover:text-secondary transition-all hover:scale-110"
           >
