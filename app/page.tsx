@@ -171,7 +171,7 @@ export default function Home() {
       <section className="bg-gradient-to-b from-70% from-bkg to-bkg-dark">
         <div
           id="projects-container"
-          className="flex flex-col gap-[10rem] px-[2%] pb-60 overflow-hidden container"
+          className="flex flex-col gap-[10rem] px-[5%] pb-60 overflow-hidden container"
         >
           <Card
             name="Resume Roast"
@@ -253,16 +253,16 @@ export default function Home() {
             href="https://github.com/MatthewFrieri/HawkHacks_CookClever"
             tools={["React", "Flask", "Google AI Studio", "MongoDB", "Neurelo"]}
           >
-            <div className="flex items-center gap-x-[4%] px-[3%] py-[7.5%] h-full [perspective:750px]">
+            <div className="flex items-center gap-x-[4%] p-[7.5%] h-full [perspective:750px]">
               <img
                 src="projects/login.png"
                 alt="A screenshot from the project."
-                className="shadow-left rounded w-[25%]"
+                className="shadow-left rounded w-[22%]"
               />
               <img
                 src="projects/image_analysis.png"
                 alt="A screenshot from the project."
-                className="shadow-left rounded w-[25%]"
+                className="shadow-left rounded w-[22%]"
               />
               <p id="card-text" className="my-auto text-3xl">
                 CookClever is an innovative web app designed to help people

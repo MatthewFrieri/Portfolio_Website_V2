@@ -13,7 +13,7 @@ export default function Card({ name, href, tools, children }: CardProps) {
   return (
     <div className="[perspective:750px] flex">
       <Link href={href} target="_blank">
-        <div id="card" className="relative mx-auto w-[85%] h-[52rem]">
+        <div id="card" className="relative mx-auto w-[95%] h-[52rem]">
           <div className="bg-gradient-to-b from-20% from-primary to-primary-dark shadow-dark shadow-xl rounded-md w-full h-[89%]">
             {children}
           </div>
