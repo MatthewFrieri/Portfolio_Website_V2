@@ -1,7 +1,11 @@
 "use client";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope, faNewspaper } from "@fortawesome/free-solid-svg-icons";
+import {
+  faAngleDown,
+  faEnvelope,
+  faNewspaper,
+} from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
 import { PythonLogo } from "./components/logos/PythonLogo";
 import { NextjsLogo } from "./components/logos/NextjsLogo";
@@ -16,6 +20,7 @@ const bebas_neue = Bebas_Neue({ subsets: ["latin"], weight: "400" });
 
 export default function Home() {
   const [titleClass, setTitleClass] = useState("");
+  const [arrowClass, setArrowClass] = useState("");
 
   const handleScroll = () => {
     const title = document.getElementById("projects-title");
@@ -69,6 +74,7 @@ export default function Home() {
 
   useEffect(() => {
     setTitleClass("animate-title");
+    setArrowClass("animate-arrow");
     handleScroll();
     window.addEventListener("scroll", handleScroll);
     return () => {
@@ -79,7 +85,7 @@ export default function Home() {
   return (
     <>
       <section className="bg-gradient-to-b from-70% from-bkg to-bkg-dark">
-        <div id="title-container" className="pb-40 container">
+        <div id="title-container" className="pb-20 container">
           <p
             id="name"
             className="mb-32 p-4 h-16 font-medium text-3xl text-center"
@@ -122,20 +128,31 @@ export default function Home() {
                 >
                   <FontAwesomeIcon icon={faGithub} />
                 </Link>
-                <Link
-                  href={"https://www.linkedin.com/in/matthew-frieri"}
-                  target="_blank"
-                  className="hover:text-secondary transition-all hover:scale-110"
-                >
-                  <FontAwesomeIcon icon={faLinkedin} />
-                </Link>
+                <div>
+                  <Link
+                    href={"https://www.linkedin.com/in/matthew-frieri"}
+                    target="_blank"
+                    className="hover:text-secondary transition-all hover:scale-110"
+                  >
+                    <FontAwesomeIcon icon={faLinkedin} />
+                  </Link>
+                </div>
               </div>
             </div>
           </div>
+          <span
+            className={`flex justify-center mt-6 text-3xl ${arrowClass} opacity-0`}
+          >
+            <Link href={"#about-section"}>
+              <div className="p-4">
+                <FontAwesomeIcon icon={faAngleDown} />
+              </div>
+            </Link>
+          </span>
         </div>
       </section>
 
-      <section className="bg-dark">
+      <section id="about-section" className="bg-dark">
         <div className="gap-x-16 grid grid-cols-[2fr,1fr] grid-rows-[5rem,1fr] px-10 py-24 container">
           <p className={`${bebas_neue.className} text-5xl text-secondary`}>
             About Me

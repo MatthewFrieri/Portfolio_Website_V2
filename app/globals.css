@@ -13,6 +13,10 @@
   --secondary: #E0B151;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   color: var(--content);
   background: var(--bkg);
@@ -43,6 +47,21 @@ body {
   animation: rotateTitle 1.2s ease forwards; /* Runs for 1 second */
 }
 
+@keyframes translateArrow {
+  0% {
+    transform: translateY(-20px); 
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+.animate-arrow {
+  animation: translateArrow 1.2s ease forwards; /* Runs for 1 second */
+  animation-delay: 2s;
+}
 
 .container {
   max-width: 1700px;

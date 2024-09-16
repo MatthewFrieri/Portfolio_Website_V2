@@ -21,20 +21,20 @@ export default function RootLayout({
   config.autoAddCss = false;
 
   return (
-    <ReactLenis root>
-      <html lang="en">
-        <head>
-          <meta name="title" content={metadata.title} />
-          <meta name="description" content={metadata.description} />
-          <meta property="og:title" content={metadata.title} />
-          <meta property="og:description" content={metadata.description} />
-          <title>{metadata.title}</title>
-          <link rel="icon" href="favicon.png" />
-        </head>
-        <body id="my-scroll" className={`${rubik.className} antialiased`}>
-          {children}
-        </body>
-      </html>
-    </ReactLenis>
+    // <ReactLenis root>
+    <html lang="en">
+      <head>
+        <meta name="title" content={metadata.title} />
+        <meta name="description" content={metadata.description} />
+        <meta property="og:title" content={metadata.title} />
+        <meta property="og:description" content={metadata.description} />
+        <title>{metadata.title}</title>
+        <link rel="icon" href="favicon.png" />
+      </head>
+      <body id="my-scroll" className={`${rubik.className} antialiased`}>
+        {children}
+      </body>
+    </html>
+    // </ReactLenis>
   );
 }
