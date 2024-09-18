@@ -105,7 +105,7 @@ export default function Home() {
               <h1
                 className={`origin-bottom opacity-0 [transform:rotateX(90deg)] ${titleClass}`}
               >
-                Software Engineer<span className="text-primary">.</span> <br />
+                Software Designer<span className="text-primary">.</span> <br />
               </h1>
               <h1
                 className={`origin-bottom opacity-0 [transform:rotateX(90deg)] ${titleClass}`}
@@ -161,8 +161,8 @@ export default function Home() {
             My Go-To Tools
           </p>
           <p id="bio" className="text-2xl">
-            Hello! I'm Matthew Frieri, a second-year student in Computer and
-            Data Science at the University of Toronto. I'm passionate about
+            Hi! I'm Matthew Frieri, a second-year student in Computer and Data
+            Science at the University of Toronto. I'm passionate about
             continuous learning and using technology to tackle real-world
             problems, always striving to make a positive impact.
           </p>
@@ -190,6 +190,42 @@ export default function Home() {
           id="projects-container"
           className="flex flex-col gap-[10rem] px-[5%] pb-60 overflow-hidden container"
         >
+          <Card
+            name="Code Genius"
+            href="https://github.com/MatthewFrieri/HackThe6ix-CodeGenius"
+            tools={[
+              "NextJS",
+              "  TypeScript  ",
+              "Tailwind",
+              "Flask",
+              "Meta Llama",
+            ]}
+          >
+            <div className="gap-x-[5%] grid grid-cols-[40%,1fr] grid-rows-2 p-[7.5%] h-full [perspective:750px]">
+              <img
+                src="projects/code_review.png"
+                alt="A screenshot from the project."
+                className="shadow-top-left mt-auto mb-4 rounded"
+              />
+              <img
+                src="projects/why_score.png"
+                alt="A screenshot from the project."
+                className="shadow-bottom-left col-start-1 mt-4 rounded"
+              />
+              <p
+                id="card-text"
+                className="col-start-2 row-span-2 row-start-1 my-auto text-3xl"
+              >
+                CodeGenius is a tool to help annotate and break down code.
+                Simply upload a file (or zip file) and in seconds everything is
+                annotated! Certain sections of code will be highlighted as areas
+                of potential confusion where some refactoring could improve the
+                codebase. More detailed notes along with a rating and
+                justification for the readablitiy of the code can also be found
+                by through some intuative navigation.
+              </p>
+            </div>
+          </Card>
           <Card
             name="Resume Roast"
             href="https://github.com/MatthewFrieri/IgnitionHacks_ResumeRoast"
@@ -226,42 +262,6 @@ export default function Home() {
                 masterpiece by Drake's biggest rival, Kendrick Lamar. This is
                 where the user gains key insights on specific ways to improve
                 their resume.
-              </p>
-            </div>
-          </Card>
-          <Card
-            name="Code Genius"
-            href="https://github.com/MatthewFrieri/HackThe6ix-CodeGenius"
-            tools={[
-              "NextJS",
-              "  TypeScript  ",
-              "Tailwind",
-              "Flask",
-              "Meta Llama",
-            ]}
-          >
-            <div className="gap-x-[5%] grid grid-cols-[40%,1fr] grid-rows-2 p-[7.5%] h-full [perspective:750px]">
-              <img
-                src="projects/code_review.png"
-                alt="A screenshot from the project."
-                className="shadow-top-left mt-auto mb-4 rounded"
-              />
-              <img
-                src="projects/why_score.png"
-                alt="A screenshot from the project."
-                className="shadow-bottom-left col-start-1 mt-4 rounded"
-              />
-              <p
-                id="card-text"
-                className="col-start-2 row-span-2 row-start-1 my-auto text-3xl"
-              >
-                CodeGenius is a tool to help annotate and break down code.
-                Simply upload a file (or zip file) and in seconds everythin is
-                annotated are annotated! Certain sections of code will be
-                highlighted as areas of potential confusion where some
-                refactoring could improve the codebase. More detailed notes
-                along with a rating and justification for the readablitiy of the
-                code can also be found by through some intuative navigation.
               </p>
             </div>
           </Card>
