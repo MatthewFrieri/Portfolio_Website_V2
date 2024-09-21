@@ -128,15 +128,18 @@ export default function Home() {
                 >
                   <FontAwesomeIcon icon={faGithub} />
                 </Link>
-                <div>
-                  <Link
-                    href={"https://www.linkedin.com/in/matthew-frieri"}
-                    target="_blank"
-                    className="hover:text-secondary transition-all hover:scale-110"
-                  >
-                    <FontAwesomeIcon icon={faLinkedin} />
-                  </Link>
-                </div>
+                <Link
+                  href={"https://www.linkedin.com/in/matthew-frieri"}
+                  target="_blank"
+                  className="hover:text-secondary transition-all hover:scale-110"
+                >
+                  <FontAwesomeIcon icon={faLinkedin} />
+                </Link>
+                <Link href={"Resume.pdf"} target="_blank">
+                  <button className="bg-content hover:bg-secondary mb-[] px-2 pt-[0.3rem] rounded-[0.2rem] text-4xl text-bkg leading-[] transition-all hover:scale-110">
+                    Resume
+                  </button>
+                </Link>
               </div>
             </div>
           </div>
@@ -296,8 +299,8 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-dark">
-        <div className="flex justify-center items-center gap-8 h-60 text-4xl container">
+      <footer className="bg-dark">
+        <div className="flex justify-center items-center gap-6 h-60 text-4xl container">
           <div className="border-secondary mr-10 border w-80 footer-lines" />
           <Link
             href={"mailto: mat.frieri@gmail.com"}
@@ -320,16 +323,17 @@ export default function Home() {
           >
             <FontAwesomeIcon icon={faLinkedin} />
           </Link>
-          <Link
-            href={"/Resume.pdf"}
-            target="_blank"
-            className="hover:text-secondary transition-all hover:scale-110"
-          >
-            <FontAwesomeIcon icon={faNewspaper} />
+          <Link href={"Resume.pdf"} target="_blank">
+            <button
+              className={`bg-content px-2 mb-[0.6rem] rounded-[0.2rem] pt-[0.2rem] leading-[1.8rem] text-dark hover:bg-secondary text-2xl transition-all hover:scale-110 ${bebas_neue.className}`}
+            >
+              Resume
+            </button>
           </Link>
+
           <div className="border-secondary ml-10 border w-80 footer-lines" />
         </div>
-      </section>
+      </footer>
     </>
   );
 }
