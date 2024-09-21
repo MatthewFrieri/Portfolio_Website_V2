@@ -135,7 +135,7 @@ export default function Home() {
                 >
                   <FontAwesomeIcon icon={faLinkedin} />
                 </Link>
-                <Link href={"Matthew_Frieri_Resume.pdf"} target="_blank">
+                <Link href={"Matthew Frieri - Resume.pdf"} target="_blank">
                   <button className="bg-content hover:bg-secondary mb-[] px-2 pt-[0.3rem] rounded-[0.2rem] text-4xl text-bkg leading-[] transition-all hover:scale-110">
                     Resume
                   </button>
@@ -323,7 +323,7 @@ export default function Home() {
           >
             <FontAwesomeIcon icon={faLinkedin} />
           </Link>
-          <Link href={"Matthew_Frieri_Resume.pdf"} target="_blank">
+          <Link href={"Matthew Frieri - Resume.pdf"} target="_blank">
             <button
               className={`bg-content px-2 mb-[0.6rem] rounded-[0.2rem] pt-[0.2rem] leading-[1.8rem] text-dark hover:bg-secondary text-2xl transition-all hover:scale-110 ${bebas_neue.className}`}
             >
