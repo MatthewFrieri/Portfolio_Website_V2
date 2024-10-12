@@ -1,11 +1,7 @@
 "use client";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
-import {
-  faAngleDown,
-  faEnvelope,
-  faNewspaper,
-} from "@fortawesome/free-solid-svg-icons";
+import { faAngleDown, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
 import { PythonLogo } from "./components/logos/PythonLogo";
 import { NextjsLogo } from "./components/logos/NextjsLogo";
@@ -194,6 +190,38 @@ export default function Home() {
           className="flex flex-col gap-[10rem] px-[5%] pb-60 overflow-hidden container"
         >
           <Card
+            name="Impactify"
+            href="https://devpost.com/software/impactify"
+            tools={["Docker", "  PostgreSQL  ", "React", "Django", "Python"]}
+          >
+            <div className="gap-x-[5%] grid grid-cols-[40%,1fr] grid-rows-2 p-[7.5%] h-full [perspective:750px]">
+              <img
+                src="projects/helmet.png"
+                alt="An image from the project."
+                className="shadow-top-left mt-auto mb-4 rounded"
+              />
+              <img
+                src="projects/live_impact.png"
+                alt="A screenshot from the project."
+                className="shadow-bottom-left col-start-1 mt-4 rounded"
+              />
+              <p
+                id="card-text"
+                className="col-start-2 row-span-2 row-start-1 my-auto text-3xl"
+              >
+                Impactify combats the rising issue of head trauma injuries in
+                contact sports. By integrating advanced hardware into helmets,
+                it tracks impacts during training and games, providing athletes
+                and coaches with vital insights into cognitive well-being. This
+                system enables proactive measures against potential head
+                injuries, ensuring safer play. With real-time notifications and
+                data visualization, Impactify empowers athletes to make informed
+                decisions about their health, driving the future of safer
+                sports.
+              </p>
+            </div>
+          </Card>
+          <Card
             name="Code Genius"
             href="https://github.com/MatthewFrieri/HackThe6ix-CodeGenius"
             tools={[
@@ -236,7 +264,7 @@ export default function Home() {
               "NodeJS",
               "React",
               "Tailwind",
-              "Google AI Studio",
+              " Google AI Studio ",
               "ElevenLabs",
             ]}
           >
@@ -271,7 +299,13 @@ export default function Home() {
           <Card
             name="Cook Clever"
             href="https://github.com/MatthewFrieri/HawkHacks_CookClever"
-            tools={["React", "Flask", "Google AI Studio", "MongoDB", "Neurelo"]}
+            tools={[
+              "React",
+              "Flask",
+              " Google AI Studio ",
+              "MongoDB",
+              "Neurelo",
+            ]}
           >
             <div className="flex items-center gap-x-[4%] p-[7.5%] h-full [perspective:750px]">
               <img
