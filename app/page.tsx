@@ -11,6 +11,7 @@ import { GitLogo } from "./components/logos/GitLogo";
 import { useEffect, useState } from "react";
 import Card from "./components/Card";
 import { Bebas_Neue } from "next/font/google";
+import WinnerBanner from "./components/WinnerBanner";
 
 const bebas_neue = Bebas_Neue({ subsets: ["latin"], weight: "400" });
 
@@ -194,7 +195,8 @@ export default function Home() {
             href="https://devpost.com/software/impactify"
             tools={["Docker", "  PostgreSQL  ", "React", "Django", "Python"]}
           >
-            <div className="gap-x-[5%] grid grid-cols-[40%,1fr] grid-rows-2 p-[7.5%] h-full [perspective:750px]">
+            <div className="gap-x-[5%] grid grid-cols-[40%,1fr] grid-rows-2 p-[7.5%] h-full overflow-hidden [perspective:750px]">
+              <WinnerBanner />
               <img
                 src="projects/helmet.png"
                 alt="An image from the project."
@@ -218,6 +220,39 @@ export default function Home() {
                 data visualization, Impactify empowers athletes to make informed
                 decisions about their health, driving the future of safer
                 sports.
+              </p>
+            </div>
+          </Card>
+          <Card
+            name="Together"
+            href="https://github.com/MatthewFrieri/CtrlHackDel_Together"
+            tools={[
+              "Expo",
+              "React Native",
+              "  Google Maps  ",
+              "SQLite",
+              "Django",
+            ]}
+          >
+            <div className="flex items-center gap-x-[4%] p-[7.5%] pr-[9%] h-full [perspective:750px]">
+              <img
+                src="projects/map.jpeg"
+                alt="A screenshot from the project."
+                className="shadow-left rounded w-[22%]"
+              />
+              <img
+                src="projects/group.jpeg"
+                alt="A screenshot from the project."
+                className="shadow-left rounded w-[22%]"
+              />
+              <p id="card-text" className="my-auto text-3xl">
+                Together fosters neighborhood connections by allowing users to
+                explore local events, join community groups, and chat with
+                nearby residents. Designed to revive a sense of local community,
+                it helps neighbors stay informed, communicate, and connect
+                naturally. With features like real-time messaging, map-based
+                event viewing, and neighborhood groups, the app revives the
+                essence of community in neighborhoods.
               </p>
             </div>
           </Card>
@@ -293,40 +328,6 @@ export default function Home() {
                 masterpiece by Drake's biggest rival, Kendrick Lamar. This is
                 where the user gains key insights on specific ways to improve
                 their resume.
-              </p>
-            </div>
-          </Card>
-          <Card
-            name="Cook Clever"
-            href="https://github.com/MatthewFrieri/HawkHacks_CookClever"
-            tools={[
-              "React",
-              "Flask",
-              " Google AI Studio ",
-              "MongoDB",
-              "Neurelo",
-            ]}
-          >
-            <div className="flex items-center gap-x-[4%] p-[7.5%] h-full [perspective:750px]">
-              <img
-                src="projects/login.png"
-                alt="A screenshot from the project."
-                className="shadow-left rounded w-[22%]"
-              />
-              <img
-                src="projects/image_analysis.png"
-                alt="A screenshot from the project."
-                className="shadow-left rounded w-[22%]"
-              />
-              <p id="card-text" className="my-auto text-3xl">
-                CookClever is an innovative web app designed to help people
-                learn how to cook. It offers recipes and step-by-step
-                instructions to guide users through the cooking process. At each
-                step, users are prompted to take a picture of their progress.
-                Using AI, CookClever analyzes these images and provides tailored
-                feedback to help users improve their cooking skills. This
-                experience is also gamified by giving the user an overall score
-                for how well the step was followed.
               </p>
             </div>
           </Card>
