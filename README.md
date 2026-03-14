@@ -1,1 +1,1 @@
-# https://matthewfrieri.design
+# https://matthew.frieri.ca
