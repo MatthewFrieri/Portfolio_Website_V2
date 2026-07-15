@@ -102,12 +102,12 @@ export default function Home() {
               <h1
                 className={`origin-bottom opacity-0 [transform:rotateX(90deg)] ${titleClass}`}
               >
-                Software Designer<span className="text-primary">.</span> <br />
+                Systems Designer<span className="text-primary">.</span> <br />
               </h1>
               <h1
                 className={`origin-bottom opacity-0 [transform:rotateX(90deg)] ${titleClass}`}
               >
-                Web Developer<span className="text-primary">.</span> <br />
+                Data Engineer<span className="text-primary">.</span> <br />
               </h1>
               <h1
                 className={`origin-bottom opacity-0 [transform:rotateX(90deg)] ${titleClass}`}
@@ -121,19 +121,19 @@ export default function Home() {
                 <Link
                   href={"https://github.com/MatthewFrieri"}
                   target="_blank"
-                  className="hover:text-secondary transition-all hover:scale-110"
+                  className="hover:text-secondary hover:scale-110 transition-all"
                 >
                   <FontAwesomeIcon icon={faGithub} />
                 </Link>
                 <Link
                   href={"https://www.linkedin.com/in/matthew-frieri"}
                   target="_blank"
-                  className="hover:text-secondary transition-all hover:scale-110"
+                  className="hover:text-secondary hover:scale-110 transition-all"
                 >
                   <FontAwesomeIcon icon={faLinkedin} />
                 </Link>
-                <Link href={"Matthew Frieri - Resume.pdf"} target="_blank">
-                  <button className="bg-content hover:bg-secondary mb-[] px-2 pt-[0.3rem] rounded-[0.2rem] text-4xl text-bkg leading-[] transition-all hover:scale-110">
+                <Link href={"Matthew_Frieri_Resume.pdf"} target="_blank">
+                  <button className="bg-content hover:bg-secondary mb-[] px-2 pt-[0.3rem] rounded-[0.2rem] text-bkg text-4xl leading-[] hover:scale-110 transition-all">
                     Resume
                   </button>
                 </Link>
@@ -161,17 +161,16 @@ export default function Home() {
             My Go-To Tools
           </p>
           <p id="bio" className="text-2xl">
-            Hi! I'm Matthew Frieri, a second-year student in Computer and Data
+            Hi! I'm Matthew Frieri, a third-year student in Computer and Data
             Science at the University of Toronto. I'm passionate about
-            continuous learning and using technology to tackle real-world
-            problems, always striving to make a positive impact.
+            always learning new things and using technology to tackle real-world
+            problems, striving to make a positive impact.
           </p>
           <div id="tools" className="flex flex-wrap gap-8">
+            <GitLogo width={60} />
+            <PythonLogo width={60} />
             <TypescriptLogo width={60} />
             <NextjsLogo width={60} />
-            <TailwindLogo width={60} />
-            <PythonLogo width={60} />
-            <GitLogo width={60} />
           </div>
         </div>
       </section>
@@ -336,29 +335,29 @@ export default function Home() {
 
       <footer className="bg-dark">
         <div className="flex justify-center items-center gap-6 h-60 text-4xl container">
-          <div className="border-secondary mr-10 border w-80 footer-lines" />
+          <div className="mr-10 border border-secondary w-80 footer-lines" />
           <Link
             href={"mailto: mat.frieri@gmail.com"}
             target="_blank"
-            className="hover:text-secondary transition-all hover:scale-110"
+            className="hover:text-secondary hover:scale-110 transition-all"
           >
             <FontAwesomeIcon icon={faEnvelope} />
           </Link>
           <Link
             href={"https://github.com/MatthewFrieri"}
             target="_blank"
-            className="hover:text-secondary transition-all hover:scale-110"
+            className="hover:text-secondary hover:scale-110 transition-all"
           >
             <FontAwesomeIcon icon={faGithub} />
           </Link>
           <Link
             href={"https://www.linkedin.com/in/matthew-frieri"}
             target="_blank"
-            className="hover:text-secondary transition-all hover:scale-110"
+            className="hover:text-secondary hover:scale-110 transition-all"
           >
             <FontAwesomeIcon icon={faLinkedin} />
           </Link>
-          <Link href={"Matthew Frieri - Resume.pdf"} target="_blank">
+          <Link href={"Matthew_Frieri_Resume.pdf"} target="_blank">
             <button
               className={`bg-content px-2 mb-[0.6rem] rounded-[0.2rem] pt-[0.2rem] leading-[1.8rem] text-dark hover:bg-secondary text-2xl transition-all hover:scale-110 ${bebas_neue.className}`}
             >
@@ -366,7 +365,7 @@ export default function Home() {
             </button>
           </Link>
 
-          <div className="border-secondary ml-10 border w-80 footer-lines" />
+          <div className="ml-10 border border-secondary w-80 footer-lines" />
         </div>
       </footer>
     </>
