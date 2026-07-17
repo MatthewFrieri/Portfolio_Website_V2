@@ -3,356 +3,420 @@
 @tailwind utilities;
 
 :root {
-  --bkg: #232323;
-  --bkg-dark: #141414;
-  --dark: #0f0f0f;
-  --content: #ffffff;
-  --primary: #dc4040;
-  /* --primary: #de4646; */
-  --primary-dark: #490000;
-  --secondary: #E0B151;
+    --bkg: #232323;
+    --bkg-dark: #141414;
+    --dark: #0f0f0f;
+    --content: #ffffff;
+    --primary: #dc4040;
+    --primary-dark: #490000;
+    --secondary: #f1b92d;
 }
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 body {
-  color: var(--content);
-  background: var(--bkg);
-  font-family: Arial, Helvetica, sans-serif;
+    color: var(--content);
+    background: var(--bkg);
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+    .text-balance {
+        text-wrap: balance;
+    }
 }
 
 @keyframes rotateTitle {
-  0% {
-    transform: rotateX(90deg); 
-    opacity: 0;
-  }
-  50% { 
-    opacity: 1;
-  }
-  100% {
-    transform: rotateX(0deg);
-    opacity: 1;
-  }
+    0% {
+        transform: rotateX(90deg);
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: rotateX(0deg);
+        opacity: 1;
+    }
 }
 
 .animate-title {
-  animation: rotateTitle 1.2s ease forwards; /* Runs for 1 second */
+    animation: rotateTitle 1.2s ease forwards;
+    /* Runs for 1 second */
 }
 
 @keyframes translateArrow {
-  0% {
-    transform: translateY(-20px); 
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0px);
-    opacity: 1;
-  }
+    0% {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
 }
 
 .animate-arrow {
-  animation: translateArrow 1.2s ease forwards; /* Runs for 1 second */
-  animation-delay: 2s;
+    animation: translateArrow 1.2s ease forwards;
+    /* Runs for 1 second */
+    animation-delay: 2s;
 }
 
 .container {
-  max-width: 1700px;
-  margin-left: auto;
-  margin-right: auto;
-  /* outline: 1px solid rgb(109, 245, 109); */
+    max-width: 1700px;
+    margin-left: auto;
+    margin-right: auto;
+    /* outline: 1px solid rgb(109, 245, 109); */
 }
 
 /* 3xl */
 @media (max-width: 1700px) {
-  .container {
-    max-width: 1536px;
-  }
+    .container {
+        max-width: 1536px;
+    }
 
-  h1 {
-    font-size: 8.75rem;
-  }
-  #profile { 
-    height: 36rem;
-  }
-  #top-links {
-    font-size: 2.75rem;
-  }
-  li {
-    font-size: 1rem;
-  }
+    h1 {
+        font-size: 8.75rem;
+    }
+
+    #profile {
+        height: 36rem;
+    }
+
+    #top-links {
+        font-size: 2.75rem;
+    }
+
+    li {
+        font-size: 1rem;
+    }
 }
 
 /* 2xl */
 @media (max-width: 1536px) {
-  .container {
-    max-width: 1280px;
-  }
+    .container {
+        max-width: 1280px;
+    }
 
-  h1 {
-    font-size: 7rem;
-  }
-  #profile { 
-    height: 30rem;
-  }
-  #top-links {
-    font-size: 2.5rem;
-  }
-  #card-text {
-    font-size: 1.5rem;
-  }
-  #card {
-    height: 46rem;
-  }
-  li {
-    font-size: 0.9rem;
-  }
-  #project-name {
-    font-size: 8rem;
-  }
+    h1 {
+        font-size: 7rem;
+    }
+
+    #profile {
+        height: 30rem;
+    }
+
+    #top-links {
+        font-size: 2.5rem;
+    }
+
+    #card-text {
+        font-size: 1.5rem;
+    }
+
+    #card {
+        height: 46rem;
+    }
+
+    li {
+        font-size: 0.9rem;
+    }
+
+    #project-name {
+        font-size: 8rem;
+    }
 }
 
 /* xl */
 @media (max-width: 1280px) {
-  .container {
-    max-width: 1024px;
-  }
+    .container {
+        max-width: 1024px;
+    }
 
-  h1 {
-    font-size: 5.75rem;
-  }
-  #profile { 
-    height: 24rem;
-  }
-  #top-links {
-    font-size: 2.25rem;
-  }
-  #card-text {
-    font-size: 1.5rem;
-    line-height: 1.8rem;
-  }
-  #card {
-    height: 44rem;
-  }
-  li {
-    font-size: 0.7rem;
-  }
-  #project-name {
-    font-size: 6.8rem;
-  }
-  #projects-title  {
-    font-size: 10rem;
-  }
+    h1 {
+        font-size: 5.75rem;
+    }
+
+    #profile {
+        height: 24rem;
+    }
+
+    #top-links {
+        font-size: 2.25rem;
+    }
+
+    #card-text {
+        font-size: 1.5rem;
+        line-height: 1.8rem;
+    }
+
+    #card {
+        height: 44rem;
+    }
+
+    li {
+        font-size: 0.7rem;
+    }
+
+    #project-name {
+        font-size: 6.8rem;
+    }
+
+    #projects-title {
+        font-size: 10rem;
+    }
 }
 
 /* lg */
 @media (max-width: 1024px) {
-  .container {
-    max-width: 768px;
-  }
+    .container {
+        max-width: 768px;
+    }
 
-  h1 {
-    font-size: 4.25rem;
-  }
-  #profile { 
-    height: 18rem;
-  }
-  #top-links {
-    font-size: 2rem;
-  }
-  #tools {
-    margin-top: 40px;
-  }
-  #card-text {
-    font-size: 1.1rem;
-    line-height: 1.3rem;
-  }
-  #card {
-    height: 32rem;
-  }
-  li {
-    font-size: 0.55rem;
-  }
-  #project-name {
-    font-size: 5.3rem;
-  }
-  #projects-title  {
-    font-size: 8rem;
-  }
+    h1 {
+        font-size: 4.25rem;
+    }
+
+    #profile {
+        height: 18rem;
+    }
+
+    #top-links {
+        font-size: 2rem;
+    }
+
+    #tools {
+        margin-top: 40px;
+    }
+
+    #card-text {
+        font-size: 1.1rem;
+        line-height: 1.3rem;
+    }
+
+    #card {
+        height: 32rem;
+    }
+
+    li {
+        font-size: 0.55rem;
+    }
+
+    #project-name {
+        font-size: 5.3rem;
+    }
+
+    #projects-title {
+        font-size: 8rem;
+    }
 }
 
 /* md */
 @media (max-width: 768px) {
-  .container {
-    max-width: 640px;
-  }
+    .container {
+        max-width: 640px;
+    }
 
-  h1 {
-    font-size: 3.5rem;
-  }
-  #profile { 
-    height: 15rem;
-  }
-  #top-links {
-    font-size: 2rem;
-  }
-  #title-container {
-    padding-bottom: 5rem;
-  }
-  #name {
-    margin-bottom: 40px;
-  }
-  #card-text {
-    font-size: 0.9rem;
-    line-height: 1.1rem;
-  }
-  #card {
-    height: 28rem;
-  }
-  li {
-    font-size: 0.45rem;
-  }
-  #project-name {
-    font-size: 4.5rem;
-  }
-  #projects-title  {
-    font-size: 7rem;
-  }
+    h1 {
+        font-size: 3.5rem;
+    }
+
+    #profile {
+        height: 15rem;
+    }
+
+    #top-links {
+        font-size: 2rem;
+    }
+
+    #title-container {
+        padding-bottom: 5rem;
+    }
+
+    #name {
+        margin-bottom: 40px;
+    }
+
+    #card-text {
+        font-size: 0.9rem;
+        line-height: 1.1rem;
+    }
+
+    #card {
+        height: 28rem;
+    }
+
+    li {
+        font-size: 0.45rem;
+    }
+
+    #project-name {
+        font-size: 4.5rem;
+    }
+
+    #projects-title {
+        font-size: 7rem;
+    }
 }
 
 /* sm */
 @media (max-width: 640px) {
-  .container {
-    max-width: 475px;
-  }
-  
-  h1 {
-    font-size: 2.5rem;
-  }
-  #profile { 
-    height: 11rem;
-  }
-  #top-links {
-    font-size: 2rem;
-  }
-  #tools {
-    margin-top: 80px;
-  }
-  #card-text {
-    font-size: 0.60rem;
-    line-height: 0.85rem;
-    padding-right: 5px;
-  }
-  #card {
-    height: 20rem;
-  }
-  li {
-    font-size: 0.32rem;
-  }
-  #project-name {
-    font-size: 3.5rem;
-  }
-  #projects-title  {
-    font-size: 6rem;
-  }
+    .container {
+        max-width: 475px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    #profile {
+        height: 11rem;
+    }
+
+    #top-links {
+        font-size: 2rem;
+    }
+
+    #tools {
+        margin-top: 80px;
+    }
+
+    #card-text {
+        font-size: 0.60rem;
+        line-height: 0.85rem;
+        padding-right: 5px;
+    }
+
+    #card {
+        height: 20rem;
+    }
+
+    li {
+        font-size: 0.32rem;
+    }
+
+    #project-name {
+        font-size: 3.5rem;
+    }
+
+    #projects-title {
+        font-size: 6rem;
+    }
 }
 
 /* xs */
 @media (max-width: 475px) {
-  .container {
-    max-width: 400px;
-  }
-  
-  h1 {
-    font-size: 2rem;
-  }
-  #profile { 
-    height: 10rem;
-  }
-  #top-links {
-    font-size: 1.75rem;
-  }
-  #tools {
-    margin-top: 80px;
-  }
-  #card-text {
-    font-size: 0.55rem;
-    line-height: 0.75rem;
-    padding-right: 8px;
+    .container {
+        max-width: 400px;
+    }
 
-  }
-  #card {
-    height: 20rem;
-  }
-  li {
-    font-size: 0.32rem;
-  }
-  #project-name {
-    font-size: 3rem;
-  }
-  #projects-title  {
-    font-size: 5rem;
-  }
-  .footer-lines {
-    visibility: hidden;
-  }
+    h1 {
+        font-size: 2rem;
+    }
+
+    #profile {
+        height: 10rem;
+    }
+
+    #top-links {
+        font-size: 1.75rem;
+    }
+
+    #tools {
+        margin-top: 80px;
+    }
+
+    #card-text {
+        font-size: 0.55rem;
+        line-height: 0.75rem;
+        padding-right: 8px;
+
+    }
+
+    #card {
+        height: 20rem;
+    }
+
+    li {
+        font-size: 0.32rem;
+    }
+
+    #project-name {
+        font-size: 3rem;
+    }
+
+    #projects-title {
+        font-size: 5rem;
+    }
+
+    .footer-lines {
+        visibility: hidden;
+    }
 }
 
 /* 2xs */
 @media (max-width: 400px) {
-  .container {
-    /* max-width: 370px; */
-    width: 95%;
-  }
-  
-  h1 {
-    font-size: 1.8rem;
-  }
-  #profile { 
-    height: 9rem;
-  }
-  #top-links {
-    font-size: 1.75rem;
-  }
-  #tools {
-    margin-top: 80px;
-  }
-  #card-text {
-    font-size: 0.5rem;
-    line-height: 0.6rem;
-    padding-right: 15px;
+    .container {
+        /* max-width: 370px; */
+        width: 95%;
+    }
 
-  }
-  #card {
-    height: 20rem;
-  }
-  li {
-    font-size: 0.32rem;
-  }
-  #project-name {
-    font-size: 3rem;
-  }
-  #projects-title  {
-    font-size: 5rem;
-  }
-  .footer-lines {
-    visibility: hidden;
-  }
-  #bio {
-    margin-top: 40px;
-  }
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    #profile {
+        height: 9rem;
+    }
+
+    #top-links {
+        font-size: 1.75rem;
+    }
+
+    #tools {
+        margin-top: 80px;
+    }
+
+    #card-text {
+        font-size: 0.5rem;
+        line-height: 0.6rem;
+        padding-right: 15px;
+
+    }
+
+    #card {
+        height: 20rem;
+    }
+
+    li {
+        font-size: 0.32rem;
+    }
+
+    #project-name {
+        font-size: 3rem;
+    }
+
+    #projects-title {
+        font-size: 5rem;
+    }
+
+    .footer-lines {
+        visibility: hidden;
+    }
+
+    #bio {
+        margin-top: 40px;
+    }
 }
 
 /* 3xs */
 @media (max-width: 370px) {
-  .container {
-    width: 95%;
-  }
+    .container {
+        width: 95%;
+    }
 }

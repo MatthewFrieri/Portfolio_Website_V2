@@ -190,6 +190,33 @@ export default function Home() {
           className="flex flex-col gap-[10rem] px-[5%] pb-60 overflow-hidden container"
         >
           <Card
+            name="Doug the Poker Bot"
+            href="https://devpost.com/software/doug-the-poker-bot"
+            tools={["React", "Flask", "   Python   ", "YOLO", "C++", "ESP32"]}
+          >
+            <div className="gap-x-[5%] grid grid-cols-[40%,1fr] grid-rows-2 p-[7.5%] h-full overflow-hidden [perspective:750px]">
+              <WinnerBanner />
+              <img
+                src="projects/doug_the_poker_bot.jpeg"
+                alt="An image from the project."
+                className="shadow-left rounded w-[85%]"
+              />
+              <p
+                id="card-text"
+                className="col-start-2 row-span-2 row-start-1 my-auto text-3xl"
+              >
+                Doug is an autonomous robotic poker dealer and broadcaster, designed 
+                to transform the home poker experience. Using computer vision and 
+                speech interpretation, Doug deals cards, follows the flow of the game, 
+                and understands betting actions such as checks, calls, raises, and folds. 
+                His live broadcast interface keeps spectators engaged by displaying 
+                players' cards, win probabilities, and statistics like VPIP and PFR. 
+                Doug combines robotics, AI, and real-time data to bring a new level of 
+                automation and engagement to poker.
+              </p>
+            </div>
+          </Card>
+          <Card
             name="Impactify"
             href="https://devpost.com/software/impactify"
             tools={["Docker", "  PostgreSQL  ", "React", "Django", "Python"]}

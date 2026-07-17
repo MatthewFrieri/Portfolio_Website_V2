@@ -13,7 +13,7 @@ type CardProps = {
 
 export default function Card({ name, href, tools, children }: CardProps) {
   return (
-    <div className="[perspective:750px] flex">
+    <div className="flex [perspective:750px]">
       <div id="card" className="relative mx-auto w-[95%] h-[52rem]">
         <div className="bg-gradient-to-b from-20% from-primary to-primary-dark shadow-dark shadow-xl rounded-md w-full h-[89%]">
           {children}
@@ -21,7 +21,7 @@ export default function Card({ name, href, tools, children }: CardProps) {
         <Link
           href={href}
           target="_blank"
-          className="top-6 right-6 absolute text-3xl transition-all hover:scale-110"
+          className="top-6 right-6 absolute text-3xl hover:scale-110 transition-all"
         >
           <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
         </Link>
@@ -35,7 +35,7 @@ export default function Card({ name, href, tools, children }: CardProps) {
           {tools.toReversed().map((tool, index) => (
             <li
               key={index}
-              className="flex justify-center items-center border-2 bg-secondary mt-[5%] py-[5%] border-bkg rounded w-[120%] font-medium text-bkg"
+              className="flex justify-center items-center bg-secondary mt-[5%] py-[5%] border-2 border-bkg rounded w-[120%] font-medium text-bkg"
             >
               {tool}
             </li>
