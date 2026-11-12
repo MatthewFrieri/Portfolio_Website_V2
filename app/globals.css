@@ -282,24 +282,6 @@ body {
         font-size: 2rem;
     }
 
-    #tools {
-        margin-top: 80px;
-    }
-
-    #card-text {
-        font-size: 0.60rem;
-        line-height: 0.85rem;
-        padding-right: 5px;
-    }
-
-    #card {
-        height: 20rem;
-    }
-
-    li {
-        font-size: 0.32rem;
-    }
-
     #project-name {
         font-size: 3.5rem;
     }
@@ -327,25 +309,6 @@ body {
         font-size: 1.75rem;
     }
 
-    #tools {
-        margin-top: 80px;
-    }
-
-    #card-text {
-        font-size: 0.55rem;
-        line-height: 0.75rem;
-        padding-right: 8px;
-
-    }
-
-    #card {
-        height: 20rem;
-    }
-
-    li {
-        font-size: 0.32rem;
-    }
-
     #project-name {
         font-size: 3rem;
     }
@@ -355,7 +318,7 @@ body {
     }
 
     .footer-lines {
-        visibility: hidden;
+        display: none;
     }
 }
 
@@ -378,25 +341,6 @@ body {
         font-size: 1.75rem;
     }
 
-    #tools {
-        margin-top: 80px;
-    }
-
-    #card-text {
-        font-size: 0.5rem;
-        line-height: 0.6rem;
-        padding-right: 15px;
-
-    }
-
-    #card {
-        height: 20rem;
-    }
-
-    li {
-        font-size: 0.32rem;
-    }
-
     #project-name {
         font-size: 3rem;
     }
@@ -406,17 +350,72 @@ body {
     }
 
     .footer-lines {
-        visibility: hidden;
+        display: none;
     }
 
-    #bio {
-        margin-top: 40px;
-    }
 }
 
 /* 3xs */
 @media (max-width: 370px) {
     .container {
         width: 95%;
+    }
+}
+
+/* Mobile: hero, about and project cards stack vertically */
+@media (max-width: 767.98px) {
+    #title-container h1 {
+        font-size: 4rem;
+    }
+
+    #profile {
+        height: 16rem;
+    }
+}
+
+@media (max-width: 1023.98px) {
+    #card {
+        height: auto;
+    }
+
+    #card-text {
+        font-size: 1.15rem;
+        line-height: 1.65rem;
+    }
+
+    li {
+        font-size: 0.75rem;
+    }
+}
+
+@media (max-width: 640px) {
+    #card-text {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+}
+
+@media (max-width: 475px) {
+    #title-container h1 {
+        font-size: 3rem;
+    }
+
+    #profile {
+        height: 14rem;
+    }
+
+    #card-text {
+        font-size: 0.95rem;
+        line-height: 1.4rem;
+    }
+}
+
+@media (max-width: 370px) {
+    #title-container h1 {
+        font-size: 2.6rem;
+    }
+
+    #profile {
+        height: 12rem;
     }
 }
