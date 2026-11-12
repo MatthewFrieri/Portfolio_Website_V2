@@ -280,23 +280,20 @@ export default function Home() {
             href="https://github.com/MatthewFrieri/Redstone_HLS"
             tools={["  Minecraft  ", "Python"]}
           >
-            <div className="gap-x-[5%] max-lg:gap-y-5 grid grid-cols-[40%,1fr] max-lg:grid-cols-2 grid-rows-2 max-lg:grid-rows-none p-[7.5%] max-lg:pt-16 h-full overflow-hidden [perspective:750px]">
-              <img
-                src="projects/minecraft_fpga.png"
-                alt="A 6x4 FPGA built in Minecraft."
-                className="max-lg:col-span-2 col-start-1 row-span-2 max-lg:row-span-1 row-start-1 shadow-left max-lg:mx-auto my-auto rounded max-sm:w-full max-lg:w-3/4"
-              />
-              <p
-                id="card-text"
-                className="max-lg:col-span-2 col-start-2 max-lg:col-start-1 row-span-2 max-lg:row-span-1 row-start-1 max-lg:row-start-2 my-auto text-3xl"
-              >
+            <div className="flow-root p-[7.5%] max-lg:pt-16 h-full overflow-hidden [perspective:750px]">
+              <p id="card-text" className="text-3xl">
+                <img
+                  src="projects/minecraft_fpga.png"
+                  alt="A 6x4 FPGA built in Minecraft."
+                  className="float-left max-sm:float-none shadow-left mr-[4%] max-sm:mr-0 mb-[3%] max-sm:mb-5 rounded w-[55%] max-sm:w-full"
+                />
                 Redstone HLS is a hardware synthesis toolchain that programs an
                 FPGA built entirely in Minecraft. Circuits are written in a small
-                Verilog-like HDL, compiled into a gate-level netlist, then placed 
-                and routed across a fabric of configurable logic blocks, switch 
-                boxes, and routing channels using a cost function based on 
-                propagation delay and wire length. The final configuration is 
-                converted into a .mcfunction file that acts as the FPGA's bitstream, 
+                Verilog-like HDL, compiled into a gate-level netlist, then placed
+                and routed across a fabric of configurable logic blocks, switch
+                boxes, and routing channels using a cost function based on
+                propagation delay and wire length. The final configuration is
+                converted into a .mcfunction file that acts as the FPGA's bitstream,
                 building the circuit onto the board when run in game.
               </p>
             </div>
