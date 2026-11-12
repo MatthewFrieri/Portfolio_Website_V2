@@ -247,6 +247,35 @@ export default function Home() {
             </div>
           </Card>
           <Card
+            name="ClimbDB"
+            href="https://climbdb.frieri.ca"
+            tools={["  Self Hosted  ", "React", "FastAPI"]}
+          >
+            <div className="gap-x-[5%] max-lg:gap-y-5 grid grid-cols-[40%,1fr] max-lg:grid-cols-2 grid-rows-2 max-lg:grid-rows-none p-[7.5%] max-lg:pt-16 h-full overflow-hidden [perspective:750px]">
+              <img
+                src="projects/climbdb_gallery.png"
+                alt="An image from the project."
+                className="shadow-top-left max-lg:my-auto mt-auto mb-4 rounded"
+              />
+              <img
+                src="projects/climbdb_metrics.png"
+                alt="A screenshot from the project."
+                className="shadow-bottom-left col-start-1 max-lg:col-start-2 max-lg:my-auto mt-4 rounded"
+              />
+              <p
+                id="card-text"
+                className="max-lg:col-span-2 col-start-2 max-lg:col-start-1 row-span-2 max-lg:row-span-1 row-start-1 max-lg:row-start-2 my-auto text-3xl"
+              >
+                ClimbDB is a passion project built to catalogue my bouldering 
+                progress as I  continue to become a better climber. This 
+                project consists of two main use cases: A gallery where I 
+                can view, add, and manage all my completed climbs, and a 
+                metrics page where I can see trends in my overall performance, 
+                helping me better understand what needs improvement.
+              </p>
+            </div>
+          </Card>
+          <Card
             name="Together"
             href="https://github.com/MatthewFrieri/CtrlHackDel_Together"
             tools={[
@@ -279,7 +308,7 @@ export default function Home() {
               </p>
             </div>
           </Card>
-          <Card
+          {/* <Card
             name="Code Genius"
             href="https://github.com/MatthewFrieri/HackThe6ix-CodeGenius"
             tools={[
@@ -314,7 +343,7 @@ export default function Home() {
                 by through some intuative navigation.
               </p>
             </div>
-          </Card>
+          </Card> */}
           <Card
             name="Resume Roast"
             href="https://github.com/MatthewFrieri/IgnitionHacks_ResumeRoast"
