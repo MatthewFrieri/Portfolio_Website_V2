@@ -130,7 +130,7 @@ export default function Home() {
                   <FontAwesomeIcon icon={faLinkedin} />
                 </Link>
                 <Link href={"Matthew_Frieri_Resume.pdf"} target="_blank">
-                  <button className="bg-content hover:bg-secondary mb-[] px-2 pt-[0.3rem] rounded-[0.2rem] text-bkg text-4xl max-md:text-[0.8em] leading-[] max-md:leading-[1.1] hover:scale-110 transition-all">
+                  <button className="bg-content hover:bg-secondary mb-[] px-2 pt-[0.3rem] rounded-[0.2rem] text-bkg max-md:text-[0.8em] text-4xl leading-[] max-md:leading-[1.1] hover:scale-110 transition-all">
                     Resume
                   </button>
                 </Link>
@@ -157,7 +157,7 @@ export default function Home() {
           <p className={`${bebas_neue.className} text-5xl text-secondary max-md:order-3 max-md:mt-12 max-md:mb-6`}>
             My Go-To Tools
           </p>
-          <p id="bio" className="max-md:order-2 text-2xl max-md:text-xl max-sm:text-lg">
+          <p id="bio" className="max-md:order-2 max-sm:text-lg max-md:text-xl text-2xl">
             Hi! I'm Matthew Frieri, a third-year student in Computer and Data
             Science at the University of Toronto. I'm passionate about
             always learning new things and using technology to tackle real-world
@@ -196,11 +196,11 @@ export default function Home() {
               <img
                 src="projects/doug_the_poker_bot.jpeg"
                 alt="An image from the project."
-                className="shadow-left max-lg:col-span-2 max-lg:mx-auto rounded w-[85%] max-lg:w-1/3 max-sm:w-1/2"
+                className="max-lg:col-span-2 shadow-left max-lg:mx-auto rounded w-[85%] max-sm:w-1/2 max-lg:w-1/3"
               />
               <p
                 id="card-text"
-                className="col-start-2 max-lg:col-span-2 max-lg:col-start-1 row-span-2 max-lg:row-span-1 row-start-1 max-lg:row-start-2 my-auto text-3xl"
+                className="max-lg:col-span-2 col-start-2 max-lg:col-start-1 row-span-2 max-lg:row-span-1 row-start-1 max-lg:row-start-2 my-auto text-3xl"
               >
                 Doug is an autonomous robotic poker dealer and broadcaster, designed 
                 to transform the home poker experience. Using computer vision and 
@@ -223,16 +223,16 @@ export default function Home() {
               <img
                 src="projects/helmet.png"
                 alt="An image from the project."
-                className="shadow-top-left mt-auto max-lg:my-auto mb-4 rounded"
+                className="shadow-top-left max-lg:my-auto mt-auto mb-4 rounded"
               />
               <img
                 src="projects/live_impact.png"
                 alt="A screenshot from the project."
-                className="shadow-bottom-left col-start-1 max-lg:col-start-2 mt-4 max-lg:my-auto rounded"
+                className="shadow-bottom-left col-start-1 max-lg:col-start-2 max-lg:my-auto mt-4 rounded"
               />
               <p
                 id="card-text"
-                className="col-start-2 max-lg:col-span-2 max-lg:col-start-1 row-span-2 max-lg:row-span-1 row-start-1 max-lg:row-start-2 my-auto text-3xl"
+                className="max-lg:col-span-2 col-start-2 max-lg:col-start-1 row-span-2 max-lg:row-span-1 row-start-1 max-lg:row-start-2 my-auto text-3xl"
               >
                 Impactify combats the rising issue of head trauma injuries in
                 contact sports. By integrating advanced hardware into helmets,
@@ -261,12 +261,12 @@ export default function Home() {
               <img
                 src="projects/map.jpeg"
                 alt="A screenshot from the project."
-                className="shadow-left rounded w-[22%] max-lg:w-[28%] max-sm:w-[40%]"
+                className="shadow-left rounded w-[22%] max-sm:w-[40%] max-lg:w-[28%]"
               />
               <img
                 src="projects/group.jpeg"
                 alt="A screenshot from the project."
-                className="shadow-left rounded w-[22%] max-lg:w-[28%] max-sm:w-[40%]"
+                className="shadow-left rounded w-[22%] max-sm:w-[40%] max-lg:w-[28%]"
               />
               <p id="card-text" className="my-auto max-lg:w-full text-3xl">
                 Together fosters neighborhood connections by allowing users to
@@ -294,16 +294,16 @@ export default function Home() {
               <img
                 src="projects/code_review.png"
                 alt="A screenshot from the project."
-                className="shadow-top-left mt-auto max-lg:my-auto mb-4 rounded"
+                className="shadow-top-left max-lg:my-auto mt-auto mb-4 rounded"
               />
               <img
                 src="projects/why_score.png"
                 alt="A screenshot from the project."
-                className="shadow-bottom-left col-start-1 max-lg:col-start-2 mt-4 max-lg:my-auto rounded"
+                className="shadow-bottom-left col-start-1 max-lg:col-start-2 max-lg:my-auto mt-4 rounded"
               />
               <p
                 id="card-text"
-                className="col-start-2 max-lg:col-span-2 max-lg:col-start-1 row-span-2 max-lg:row-span-1 row-start-1 max-lg:row-start-2 my-auto text-3xl"
+                className="max-lg:col-span-2 col-start-2 max-lg:col-start-1 row-span-2 max-lg:row-span-1 row-start-1 max-lg:row-start-2 my-auto text-3xl"
               >
                 CodeGenius is a tool to help annotate and break down code.
                 Simply upload a file (or zip file) and in seconds everything is
@@ -330,16 +330,16 @@ export default function Home() {
               <img
                 src="projects/drakes_diss.png"
                 alt="A screenshot from the project."
-                className="shadow-top-left mt-auto max-lg:my-auto mb-4 rounded"
+                className="shadow-top-left max-lg:my-auto mt-auto mb-4 rounded"
               />
               <img
                 src="projects/kendricks_critique.png"
                 alt="A screenshot from the project."
-                className="shadow-bottom-left col-start-1 max-lg:col-start-2 mt-4 max-lg:my-auto rounded"
+                className="shadow-bottom-left col-start-1 max-lg:col-start-2 max-lg:my-auto mt-4 rounded"
               />
               <p
                 id="card-text"
-                className="col-start-2 max-lg:col-span-2 max-lg:col-start-1 row-span-2 max-lg:row-span-1 row-start-1 max-lg:row-start-2 my-auto text-3xl"
+                className="max-lg:col-span-2 col-start-2 max-lg:col-start-1 row-span-2 max-lg:row-span-1 row-start-1 max-lg:row-start-2 my-auto text-3xl"
               >
                 Resume Roast takes the user's resume, and uses AI and voice
                 replication systems to generate a track by Drake, dissing the
